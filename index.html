@@ -16,10 +16,12 @@
 -->
 <script type="module" src='/js/index.js'></script>
 <script>
-	fetch("/html/VarunR/index.html").then(response => {return response.text()})
-	.then(data => {document.querySelector("body").innerHTML = data});
 	fetch("/html/GreatDeveloper66/index.html").then(response => {return response.text()})
 	.then(data => {document.querySelector("body").innerHTML = data});
+	
+	fetch("/html/VarunR/index.html").then(response => {return response.text()})
+	.then(data => {document.querySelector("body").insertAdjacentHTML('beforeend', data)});
+	
 	</script>
 </head>
 <html>
