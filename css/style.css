@@ -1,7 +1,3 @@
-@import "/css/GreatDeveloper66/style.css";
-@import "/css/VarunR/style.css";
 
-* {
-	display: grid;
-	font-display: swap;
-}
+@import "../GreatDeveloper66/style.css";
+@import "../VarunR/style.css";
