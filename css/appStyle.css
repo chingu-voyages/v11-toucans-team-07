@@ -8,4 +8,11 @@
 	--cardColor: #405966;
 }
 
+body {
+	margin: auto;
+	padding: 2px;
+	font-family: Signika,Roboto,sans-serif;
+	overflow-x: hidden;
+}
+
 
