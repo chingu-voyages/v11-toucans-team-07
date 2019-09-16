@@ -1,3 +1,27 @@
-h1.classGD {
-	color: yellow;
+header.header {
+	display: grid;
+	grid-template: 1fr/1fr;
+	justify-items: center;
+	align-items: stretch;
+	background-color: #40596b;
+	width: 100%;
+	height: auto;
 }
+
+nav.navMenu {
+	display: grid;
+	grid-template: 1fr/repeat(4,1fr);
+	justify-items: center;
+	align-items: stretch;
+	height: 100%;
+	width: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+a.navItem {
+	color: #ffd05a;
+	text-decoration: none;
+	font-size: 18px;
+}
+
