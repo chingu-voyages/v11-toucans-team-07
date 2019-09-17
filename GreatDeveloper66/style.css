@@ -1,3 +1,4 @@
+
 header.header {
 	display: grid;
 	grid-template: auto/auto;
@@ -14,8 +15,8 @@ nav.navMenu {
 	justify-items: space-around;
 	align-items: center;
 	height: 100%;
-	margin-top: 13px;
-	margin-bottom: 13px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	width: auto;
 }
 
