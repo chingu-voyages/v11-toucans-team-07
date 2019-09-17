@@ -1,27 +1,33 @@
 header.header {
 	display: grid;
-	grid-template: 1fr/1fr;
+	grid-template: auto/auto;
 	justify-items: center;
-	align-items: stretch;
+	align-items: center;
 	background-color: #40596b;
 	width: 100%;
-	height: auto;
+	margin: auto;
 }
 
 nav.navMenu {
 	display: grid;
-	grid-template: 1fr/repeat(4,1fr);
-	justify-items: center;
-	align-items: stretch;
+	grid-template: 1fr/auto auto auto auto;
+	justify-items: space-around;
+	align-items: center;
 	height: 100%;
+	margin-top: 13px;
+	margin-bottom: 13px;
 	width: auto;
-	margin-top: 15px;
-	margin-bottom: 15px;
 }
 
 a.navItem {
+	display: grid;
+	grid-template: 1fr/1fr;
+	align-items:center;
+	justify-items: start;
 	color: #ffd05a;
 	text-decoration: none;
 	font-size: 18px;
+	width: auto;
+	margin-left: 15px;
 }
 
