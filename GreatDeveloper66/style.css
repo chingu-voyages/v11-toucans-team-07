@@ -32,3 +32,12 @@ a.navItem {
 	margin-left: 15px;
 }
 
+section#robot {
+	display: grid;
+	grid-template: 1fr/1fr;
+	justify-items: center;
+	align-items: center;
+	width: 100%;
+	grid-auto-rows: auto;
+	background-color: #55c0ec;
+}
