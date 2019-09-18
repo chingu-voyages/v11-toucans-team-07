@@ -41,3 +41,18 @@ section#robot {
 	grid-auto-rows: auto;
 	background-color: #55c0ec;
 }
+
+.doubleContainer {
+	display: grid;
+	grid-template: 1fr 1fr/1fr;
+	border: 3px solid red;
+	width: 350px;
+}
+
+@media screen and (min-width: 768px){
+	.doubleContainer {
+		width: 85%;
+		max-width: 1000px;
+		grid-template: 1fr/1fr 1fr;
+	}
+}
