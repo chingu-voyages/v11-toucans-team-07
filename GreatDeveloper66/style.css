@@ -48,6 +48,13 @@ section#robot {
 	border: 3px solid red;
 	width: 350px;
 }
+.robotPic {
+	display: grid;
+	grid-template: 1fr/1fr;
+	justify-items: center;
+	align-items: center;
+}
+
 
 .tickyContainer {
 	border: 3px solid green;
@@ -89,10 +96,14 @@ section#robot {
 	align-items: center;
 }
 .slackButton .buttonTxt {
+	display: grid;
+	grid-template: 1fr/auto auto;
+	align-items: center;
+	jusity-items: center;
 	width: 95%;
 	margin: auto;
 }
-.slackButton p {
+.buttonTxt p {
 	border: 3px solid red;
 	font-size: 20px;
 	width: 75%;
@@ -112,5 +123,17 @@ section#robot {
 		width: 85%;
 		max-width: 1000px;
 		grid-template: 1fr/1fr 1fr;
+	}
+	
+	.robotPic img {
+	width: 95%;
+	height: 95%;
+}
+	
+}
+@media screen and (min-width: 1024px){
+	.robotPic img {
+		width: initial;
+		height: initial;
 	}
 }

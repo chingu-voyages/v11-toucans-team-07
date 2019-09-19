@@ -1,5 +1,4 @@
- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 508 508"
-            width="400px" height="400px">
+ <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 508 508" width="400px" height="400px">>
             <circle style="fill:#FFD05B;" cx="254" cy="254" r="254" />
             <path style="fill:#F9B54C;" d="M90.8,448.8C134.8,486,191.6,508,254,508s118.8-22.4,163.2-59.2H90.8z" />
             <g>
