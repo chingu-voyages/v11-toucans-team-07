@@ -82,7 +82,30 @@ section#robot {
 	width: 250px;
 	height: 75px;
 }
+.slackButton {
+	display: grid;
+	grid-template: auto;
+	justify-items: center;
+	align-items: center;
+}
+.slackButton .buttonTxt {
+	width: 95%;
+	margin: auto;
+}
+.slackButton p {
+	border: 3px solid red;
+	font-size: 20px;
+	width: 75%;
+	color: #000000;
+	padding: 0;
+	margin: 0;
+}
 
+.slackButton img {
+	width: 50px;
+	height: 50px;
+	border: 3px solid red;
+}
 
 @media screen and (min-width: 768px){
 	.doubleContainer {
