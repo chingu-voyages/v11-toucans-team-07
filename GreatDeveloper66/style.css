@@ -37,11 +37,12 @@ section#whatIs {
 
 section#whatIs h2 {
   background-color: green;
-  border-bottom: lightblue;
 }
 
 section#whatIs .textBox {
   background-color: yellow;
+  display: grid;
+  grid-template: auto auto auto/1fr;
 }
 
 nav.navMenu {
@@ -159,7 +160,20 @@ a.navItem {
 	width: 95%;
 	height: 95%;
 }
-	
+  section#whatIs .textBox {
+    grid-template: repeat(2,1fr)/repeat(2,1fr);
+    grid-template-areas: "section1 section2"
+                         "section3 section3";
+  }
+  .section#whatIs .textBox p:first-child {
+    grid-area: section1;
+  }
+  .section#whatIs .textBox p:nth-child(2){
+    grid-area: section2;
+  }
+  section#whatIs .textBox p:nth-child(3) {
+    grid-area: section3;
+  }
 }
 @media screen and (min-width: 1024px){
 	.robotPic img {
