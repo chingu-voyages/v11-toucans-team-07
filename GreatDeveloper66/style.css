@@ -59,7 +59,7 @@ section#robot {
 
 .tickyContainer {
  display: grid;
- grid-template: auto auto auto/1fr;
+ grid-template: 125px 1fr 1fr/1fr;
  justify-items: center;
  align-items: center;
 }
@@ -78,8 +78,11 @@ section#robot {
 	font-size: 1.675rem;
 	font-weight: 300;
 	line-height: 1.25;
+ padding-left: 1.3rem;
+ padding-right: 1.3rem;
 	margin-bottom: 2rem;
  text-align: center;
+ 
 }
 
 .tickyButton {
@@ -91,6 +94,7 @@ section#robot {
   grid-template: 1fr/90px 1fr;
   justify-items: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .slackImage {
