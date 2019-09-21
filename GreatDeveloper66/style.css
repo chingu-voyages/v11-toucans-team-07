@@ -28,10 +28,11 @@ section#whatIs {
 .tickyBotBox {
   display: grid;
   grid-template: 40px 1fr/1fr;
+  grid-gap: 15px;
   justify-items: center;
   align-items: center;
   width: 90%;
-  max-width: 1000px;
+  max-width: 1200px;
   border: 3px solid red;
 }
 
@@ -43,6 +44,9 @@ section#whatIs .textBox {
   background-color: yellow;
   display: grid;
   grid-template: auto auto auto/1fr;
+}
+section#whatIs p {
+  padding: 5px 20px 5px 20px;
 }
 
 nav.navMenu {
