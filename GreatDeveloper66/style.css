@@ -32,3 +32,112 @@ a.navItem {
 	margin-left: 15px;
 }
 
+section#robot {
+	display: grid;
+	grid-template: 1fr/1fr;
+	justify-items: center;
+	align-items: center;
+	width: 100%;
+	grid-auto-rows: auto;
+	background-color: #55c0ec;
+}
+
+.doubleContainer {
+	display: grid;
+	grid-template: 1fr 1fr/1fr;
+	width: 350px;
+ margin-top: 25px;
+ margin-bottom: 25px;
+}
+.robotPic {
+	display: grid;
+	grid-template: 1fr/1fr;
+	justify-items: center;
+	align-items: center;
+}
+
+
+.tickyContainer {
+ display: grid;
+ grid-template: 125px 1fr 1fr/1fr;
+ justify-items: center;
+ align-items: center;
+}
+
+.tickyContainer h1 {
+	font-family: Signika;
+	font-size: 5rem;
+	letter-spacing: -.1875rem;
+	margin-bottom: 2rem;
+	font-weight: 300;
+	color: rgba(0,0,0,0.6);
+}
+
+.tickyText{
+	color: #FFFFFF;
+	font-size: 1.675rem;
+	font-weight: 300;
+	line-height: 1.25;
+ padding-left: 1.3rem;
+ padding-right: 1.3rem;
+	margin-bottom: 2rem;
+ text-align: center;
+ 
+}
+
+.tickyButton {
+  background-color: #FFFFFF;
+  width: 300px;
+  height: 65px;
+  border-radius: 4px;
+  display: grid;
+  grid-template: 1fr/90px 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.slackImage {
+  height: 50px;
+  width: 50px;
+  justify-self: end;
+  display: grid;
+  grid-template: 1fr/1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.slackImage img {
+  width: 40px;
+  height: 40px;
+  justify-self: end;
+}
+
+.slackText {
+  height: 50px;
+  width: 190px;
+  text-align: center;
+  line-height: 1.8em;
+  font-size: 30px;
+  justify-self: start;
+}
+
+@media screen and (min-width: 768px){
+	.doubleContainer {
+		width: 85%;
+		max-width: 1000px;
+		grid-template: 1fr/1fr 1fr;
+	}
+	
+	.robotPic img {
+	width: 95%;
+	height: 95%;
+}
+	
+}
+@media screen and (min-width: 1024px){
+	.robotPic img {
+		width: initial;
+		height: initial;
+	}
+}
