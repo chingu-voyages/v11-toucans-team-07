@@ -60,7 +60,10 @@ section#robot {
 
 .tickyContainer {
 	border: 3px solid green;
-	text-align: center;
+ display: grid;
+ grid-template: auto auto auto/1fr;
+ justify-items: center;
+ align-items: center;
 }
 
 .tickyContainer h1 {
