@@ -8,6 +8,30 @@ header.header {
 	width: 100%;
 	margin: auto;
 }
+section#robot {
+	display: grid;
+	grid-template: 1fr/1fr;
+	justify-items: center;
+	align-items: center;
+	width: 100%;
+	grid-auto-rows: auto;
+	background-color: #55c0ec;
+}
+section#whatIs {
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template: 40px 1fr/1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+section#whatIs h2 {
+  background-color: green;
+}
+
+section#whatIs .textBox {
+  background-color: yellow;
+}
 
 nav.navMenu {
 	display: grid;
@@ -32,15 +56,6 @@ a.navItem {
 	margin-left: 15px;
 }
 
-section#robot {
-	display: grid;
-	grid-template: 1fr/1fr;
-	justify-items: center;
-	align-items: center;
-	width: 100%;
-	grid-auto-rows: auto;
-	background-color: #55c0ec;
-}
 
 .doubleContainer {
 	display: grid;
