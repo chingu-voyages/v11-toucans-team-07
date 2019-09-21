@@ -37,7 +37,15 @@ section#whatIs {
 }
 
 section#whatIs h2 {
-  background-color: green;
+  color: rgba(0,0,0,0.75);
+  font-size: 40px;
+  display: inline-block;
+  
+}
+
+section#whatIs h2 span {
+  color: #000000;
+  font-weight: bold;
 }
 
 section#whatIs .textBox {
