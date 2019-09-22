@@ -36,6 +36,19 @@ section#whatIs {
   max-width: 1200px;
 }
 
+.tickyBotBox p {
+  color: rgba(0,0,0,0.75);
+}
+
+span#bold {
+  color: #000000;
+  font-weight: 900;
+}
+
+span#italic {
+  font-style: italic;
+}
+
 section#whatIs h2 {
   color: rgba(0, 0, 0, 0.75);
   font-size: 40px;
