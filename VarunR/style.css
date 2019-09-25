@@ -36,9 +36,24 @@ section#howItWorks {
 }
 .topThumbnail {
   background-color: forestgreen;
+  display: grid;
+  grid-template: 1fr/1fr;
+  justify-items: center;
+  align-items: center;
 }
+/*
+.topThumbnail img {
+  width: 300px;
+  height: 300px;
+}
+*/
 .cardFooter {
   background-color: aqua;
+  display: grid;
+  grid-template: 1fr/1fr;
+  justify-items: center;
+  align-items: center;
+  text-align:center;
 }
 
 section#howItWorks h2 {
