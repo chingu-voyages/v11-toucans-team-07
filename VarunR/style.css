@@ -12,7 +12,6 @@ section#howItWorks {
   width: 90%;
   max-width: 1000px;
   height: 95%;
-  grid-gap: 20px;
 }
 
 .worksHeading {
@@ -26,12 +25,14 @@ section#howItWorks {
   display: grid;
   grid-template: repeat(3,1fr)/1fr;
 }
+
 .card {
   border: 3px solid black;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   display: grid;
   grid-template: 5fr 2fr/1fr;
+  margin: 25px;
 }
 .topThumbnail {
   display: grid;
@@ -42,8 +43,8 @@ section#howItWorks {
 }
 
 .topThumbnail img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 
 .cardFooter {
@@ -58,7 +59,7 @@ section#howItWorks {
 section#howItWorks h2 {
   color: rgba(0, 0, 0, 0.75);
   font-size: 40px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 section#howItWorks h2 span {
