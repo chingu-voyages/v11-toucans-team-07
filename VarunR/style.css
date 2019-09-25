@@ -11,12 +11,12 @@ section#howItWorks {
   grid-template-rows: 125px 1fr;
   width: 90%;
   max-width: 1000px;
-  background-color: red;
   height: 95%;
+  grid-gap: 20px;
 }
 
 .worksHeading {
-  background-color: yellow;
+  background: transparent;
   display: grid;
   grid-template: 1fr/1fr;
   justify-items: center;
@@ -25,7 +25,6 @@ section#howItWorks {
 .cardsContainer {
   display: grid;
   grid-template: repeat(3,1fr)/1fr;
-  background-color: yellowgreen;
 }
 .card {
   border: 3px solid black;
@@ -35,25 +34,25 @@ section#howItWorks {
   grid-template: 5fr 2fr/1fr;
 }
 .topThumbnail {
-  background-color: forestgreen;
   display: grid;
   grid-template: 1fr/1fr;
   justify-items: center;
   align-items: center;
+  background-color: #40596B;
 }
-/*
+
 .topThumbnail img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
-*/
+
 .cardFooter {
-  background-color: aqua;
   display: grid;
   grid-template: 1fr/1fr;
   justify-items: center;
   align-items: center;
   text-align:center;
+  background-color: #FFFFFF;
 }
 
 section#howItWorks h2 {
