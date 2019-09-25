@@ -1,3 +1,103 @@
-h1.classVR {
-	color: blue;
+section#howItWorks {
+  background-color: #90DDAA;
+  height: 1900px;
+  display: grid;
+  grid-template: 1fr/1fr;
+  justify-items: center;
+  align-items: start;
 }
+.worksContainer {
+  display: grid;
+  grid-template-rows: 125px 1fr;
+  width: 90%;
+  max-width: 1000px;
+  height: 95%;
+}
+
+.worksHeading {
+  background: transparent;
+  display: grid;
+  grid-template: 1fr/1fr;
+  justify-items: center;
+  align-items: center;
+}
+.cardsContainer {
+  display: grid;
+  grid-template: repeat(3,1fr)/1fr;
+}
+
+.card {
+  border: 3px solid black;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  display: grid;
+  grid-template: 5fr 2fr/1fr;
+  margin: 25px;
+}
+.topThumbnail {
+  display: grid;
+  grid-template: 1fr/1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: #40596B;
+}
+
+.topThumbnail img {
+  width: 250px;
+  height: 250px;
+}
+
+.cardFooter {
+  display: grid;
+  grid-template: 1fr/1fr;
+  justify-items: center;
+  align-items: center;
+  text-align:center;
+  background-color: #FFFFFF;
+}
+
+section#howItWorks h2 {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 40px;
+  padding-top: 10px;
+}
+
+section#howItWorks h2 span {
+  color: #000000;
+  font-weight: bold;
+}
+
+
+@media only screen and (min-width: 768px){
+  section#howItWorks {
+    height: 1300px;
+  }
+  .cardsContainer {
+    grid-template: 1fr 1fr/1fr 1fr;
+    grid-template-areas: "card1 card2"
+                         "card3 card3";
+  }
+  #card1 {
+    grid-area: card1;
+  }
+  #card2 {
+    grid-area: card2;
+  }
+  #card3 {
+    grid-area: card3;
+  }
+}
+ 
+
+@media only screen and (min-width: 1024px){
+  section#howItWorks{
+    height: 650px;
+  }
+   .cardsContainer{
+    grid-template: 1fr/repeat(3,1fr);
+    grid-template-areas: "card1 card2 card3";
+  }
+  
+ 
+}
+
