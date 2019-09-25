@@ -144,6 +144,18 @@ section#usingTickyBotVR h2 span {
   font-size: 30px;
   justify-self: start;
 }
+
+footer {
+  background-color:#40596B;
+  color: hsla(0,0%,100%,.75);
+  font-size: 11px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  p {
+    line-height: 0.9em;
+  }
+}
 @media only screen and (min-width: 768px){
   section#howItWorksVR {
     height: 1300px;
