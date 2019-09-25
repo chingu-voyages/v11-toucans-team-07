@@ -1,3 +1,202 @@
-h1.classVR {
-	color: blue;
+section#howItWorksVR {
+  background-color: #90DDAA;
+  height: 1900px;
+  display: grid;
+  grid-template: 1fr/1fr;
+  justify-items: center;
+  align-items: start;
 }
+.worksContainerVR {
+  display: grid;
+  grid-template-rows: 125px 1fr;
+  width: 90%;
+  max-width: 1000px;
+  height: 95%;
+}
+
+.worksHeadingVR {
+  background: transparent;
+  display: grid;
+  grid-template: 1fr/1fr;
+  justify-items: center;
+  align-items: center;
+}
+.cardsContainerVR {
+  display: grid;
+  grid-template: repeat(3,1fr)/1fr;
+}
+
+.cardVR {
+  border: 3px solid black;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  display: grid;
+  grid-template: 5fr 2fr/1fr;
+  margin: 25px;
+}
+.topThumbnailVR {
+  display: grid;
+  grid-template: 1fr/1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: #40596B;
+}
+
+.topThumbnailVR img {
+  width: 250px;
+  height: 250px;
+}
+
+.cardFooterVR {
+  display: grid;
+  grid-template: 1fr/1fr;
+  justify-items: center;
+  align-items: center;
+  text-align:center;
+  background-color: #FFFFFF;
+}
+
+section#howItWorksVR h2 {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 40px;
+  padding-top: 10px;
+}
+
+section#howItWorksVR h2 span {
+  color: #000000;
+  font-weight: bold;
+}
+
+section#usingTickyBotVR {
+  height: 500px;
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template: 1fr/1fr;
+  align-items: center;
+  justify-items: center;
+  
+}
+.usingContainerVR {
+  height: 100%;
+  width: 90%;
+  max-width: 650px;
+  background: transparent;
+  display: grid;
+  grid-template: 100px 1fr 1fr 1fr/1fr;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+section#usingTickyBotVR h2 {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 40px;
+  padding-top: 10px;
+}
+
+section#usingTickyBotVR h2 span {
+  color: #000000;
+  font-weight: bold;
+}
+
+.usingHeadingVR, .tickParVR, .slackButtonVR, .usingFooterVR {
+  display: grid;
+  grid-template: 1fr/1fr;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.tickyButtonVR {
+  background-color: #40596B;
+  color: #FFFFFF;
+  width: 300px;
+  height: 65px;
+  border-radius: 4px;
+  display: grid;
+  grid-template: 1fr/90px 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.slackImageVR {
+  height: 50px;
+  width: 50px;
+  justify-self: end;
+  display: grid;
+  grid-template: 1fr/1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.slackImageVR img {
+  width: 40px;
+  height: 40px;
+  justify-self: end;
+}
+
+.slackTextVR {
+  height: 50px;
+  width: 190px;
+  text-align: center;
+  line-height: 1.8em;
+  font-size: 30px;
+  justify-self: start;
+}
+
+footer {
+  background-color:#40596B;
+  color: hsla(0,0%,100%,.75);
+  font-size: 11px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  p {
+    line-height: 0.9em;
+  }
+}
+
+.topArrowVR {
+  position: fixed;
+  width: 50px;
+	 height: 50px;
+  border-radius: 4px;
+	 background: url("/img/topArrow.svg") no-repeat center;
+	 background-size: contain;
+	 bottom: 20px;
+	 right: 20px;
+  margin: 10px;
+  background-color: yellow;
+}
+@media only screen and (min-width: 768px){
+  section#howItWorksVR {
+    height: 1300px;
+  }
+  .cardsContainerVR {
+    grid-template: 1fr 1fr/1fr 1fr;
+    grid-template-areas: "card1 card2"
+                         "card3 card3";
+  }
+  #card1VR {
+    grid-area: card1;
+  }
+  #card2VR {
+    grid-area: card2;
+  }
+  #card3VR {
+    grid-area: card3;
+  }
+}
+ 
+
+@media only screen and (min-width: 1024px){
+  section#howItWorksVR {
+    height: 650px;
+  }
+   .cardsContainerVR {
+    grid-template: 1fr/repeat(3,1fr);
+    grid-template-areas: "card1 card2 card3";
+  }
+}
+
