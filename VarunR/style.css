@@ -1,4 +1,4 @@
-section#howItWorks {
+section#howItWorksVR {
   background-color: #90DDAA;
   height: 1900px;
   display: grid;
@@ -6,7 +6,7 @@ section#howItWorks {
   justify-items: center;
   align-items: start;
 }
-.worksContainer {
+.worksContainerVR {
   display: grid;
   grid-template-rows: 125px 1fr;
   width: 90%;
@@ -14,19 +14,19 @@ section#howItWorks {
   height: 95%;
 }
 
-.worksHeading {
+.worksHeadingVR {
   background: transparent;
   display: grid;
   grid-template: 1fr/1fr;
   justify-items: center;
   align-items: center;
 }
-.cardsContainer {
+.cardsContainerVR {
   display: grid;
   grid-template: repeat(3,1fr)/1fr;
 }
 
-.card {
+.cardVR {
   border: 3px solid black;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -34,7 +34,7 @@ section#howItWorks {
   grid-template: 5fr 2fr/1fr;
   margin: 25px;
 }
-.topThumbnail {
+.topThumbnailVR {
   display: grid;
   grid-template: 1fr/1fr;
   justify-items: center;
@@ -42,12 +42,12 @@ section#howItWorks {
   background-color: #40596B;
 }
 
-.topThumbnail img {
+.topThumbnailVR img {
   width: 250px;
   height: 250px;
 }
 
-.cardFooter {
+.cardFooterVR {
   display: grid;
   grid-template: 1fr/1fr;
   justify-items: center;
@@ -56,44 +56,120 @@ section#howItWorks {
   background-color: #FFFFFF;
 }
 
-section#howItWorks h2 {
+section#howItWorksVR h2 {
   color: rgba(0, 0, 0, 0.75);
   font-size: 40px;
   padding-top: 10px;
 }
 
-section#howItWorks h2 span {
+section#howItWorksVR h2 span {
   color: #000000;
   font-weight: bold;
 }
 
+section#usingTickyBotVR {
+  height: 500px;
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template: 1fr/1fr;
+  align-items: center;
+  justify-items: center;
+  
+}
+.usingContainerVR {
+  height: 100%;
+  width: 90%;
+  max-width: 650px;
+  background: transparent;
+  display: grid;
+  grid-template: 100px 1fr 1fr 1fr/1fr;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
 
+section#usingTickyBotVR h2 {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 40px;
+  padding-top: 10px;
+}
+
+section#usingTickyBotVR h2 span {
+  color: #000000;
+  font-weight: bold;
+}
+
+.usingHeadingVR, .tickParVR, .slackButtonVR, .usingFooterVR {
+  display: grid;
+  grid-template: 1fr/1fr;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.tickyButtonVR {
+  background-color: #40596B;
+  color: #FFFFFF;
+  width: 300px;
+  height: 65px;
+  border-radius: 4px;
+  display: grid;
+  grid-template: 1fr/90px 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.slackImageVR {
+  height: 50px;
+  width: 50px;
+  justify-self: end;
+  display: grid;
+  grid-template: 1fr/1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.slackImageVR img {
+  width: 40px;
+  height: 40px;
+  justify-self: end;
+}
+
+.slackTextVR {
+  height: 50px;
+  width: 190px;
+  text-align: center;
+  line-height: 1.8em;
+  font-size: 30px;
+  justify-self: start;
+}
 @media only screen and (min-width: 768px){
-  section#howItWorks {
+  section#howItWorksVR {
     height: 1300px;
   }
-  .cardsContainer {
+  .cardsContainerVR {
     grid-template: 1fr 1fr/1fr 1fr;
     grid-template-areas: "card1 card2"
                          "card3 card3";
   }
-  #card1 {
+  #card1VR {
     grid-area: card1;
   }
-  #card2 {
+  #card2VR {
     grid-area: card2;
   }
-  #card3 {
+  #card3VR {
     grid-area: card3;
   }
 }
  
 
 @media only screen and (min-width: 1024px){
-  section#howItWorks{
+  section#howItWorksVR {
     height: 650px;
   }
-   .cardsContainer{
+   .cardsContainerVR {
     grid-template: 1fr/repeat(3,1fr);
     grid-template-areas: "card1 card2 card3";
   }
