@@ -67,7 +67,21 @@ section#howItWorks h2 span {
   font-weight: bold;
 }
 
-
+section#usingTickyBot {
+  height: 600px;
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template: 1fr/1fr;
+  align-items: center;
+  justify-items: center;
+  
+}
+.usingContainer {
+  height: 100%;
+  width: 90%;
+  max-width: 650px;
+  background-color: blueviolet;
+}
 @media only screen and (min-width: 768px){
   section#howItWorks {
     height: 1300px;
