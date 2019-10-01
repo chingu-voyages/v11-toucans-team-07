@@ -155,6 +155,11 @@ a.navItem:hover {
   justify-items: center;
   align-items: center;
   margin-bottom: 50px;
+  transition: transform 1s ease-in-out;
+}
+
+.tickyButton:hover {
+  transform: scale(0.97);
 }
 
 .slackImage {
