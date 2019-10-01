@@ -11,10 +11,13 @@
 	--footerBackground: #40596b;
 	--cardColor: #405966;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
 	margin: auto;
 	font-family: Signika,Roboto,sans-serif;
 	overflow-x: hidden;
+ scroll-behavior: smooth;
 }
 
