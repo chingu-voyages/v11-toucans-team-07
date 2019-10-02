@@ -37,7 +37,7 @@ section#whatIs {
 }
 
 .tickyBotBox p {
-  color: rgba(0,0,0,0.75);
+  color: rgba(0, 0, 0, 0.75);
 }
 
 span#bold {
@@ -194,7 +194,50 @@ a.navItem:hover {
   justify-self: start;
 }
 
-.tickyContainer:hover, .robotPic:hover,section#whatIs h2:hover {
+@keyframes headMove {
+  0% {
+    transform-origin: 50%;
+    transform: rotate(0deg);
+  }
+
+  15% {
+    transform: rotate(5deg);
+  }
+
+  30% {
+    transform: rotate(-5deg);
+  }
+
+  45% {
+    transform: rotate(-5deg);
+  }
+
+  60% {
+    transform: rotate(5deg);
+    transform: scale(1, 1);
+  }
+
+  80% {
+    transform-origin:40% 15%;
+    transform: scale(0.9, 0.9);
+  }
+
+  100% {
+    transform: scale(1.0, 1.0);
+  }
+}
+
+.head {
+  border: 3px solid red;
+  animation-name: headMove;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+
+.tickyContainer:hover,
+.robotPic:hover,
+section#whatIs h2:hover {
   opacity: 0.0;
   transform: translateY(-20px);
 }
