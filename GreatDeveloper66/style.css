@@ -227,19 +227,31 @@ a.navItem:hover {
   }
 }
 
+@keyframes fadeInOut {
+  from {
+    opacity: 1.0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0.0;
+    transform: translateY(-15px);
+  }
+}
 .head {
-  border: 3px solid red;
+  
   animation-name: headMove;
   animation-duration: 8s;
   animation-iteration-count: infinite;
 }
 
 
-.tickyContainer:hover,
-.robotPic:hover,
-section#whatIs h2:hover {
-  opacity: 0.0;
-  transform: translateY(-20px);
+.tickyContainer,
+.robotPic,
+section#whatIs h2 {
+  animation-name: fadeInOut;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
 }
 
 @media screen and (min-width: 768px) {
