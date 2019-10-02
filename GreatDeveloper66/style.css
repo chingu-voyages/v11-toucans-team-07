@@ -170,6 +170,7 @@ a.navItem:hover {
   grid-template: 1fr/1fr;
   justify-items: center;
   align-items: center;
+  transition: transform 1s ease-in-out;
 }
 
 .slackImage img {

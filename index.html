@@ -11,18 +11,137 @@
 <title>v11-toucans-team-07</title>
 <link rel="stylesheet" text="text/css" href="css/style.css">
 <script type="module" src='/js/index.js'></script>
-<script>
-	
-	fetch("GreatDeveloper66/index.html").then(response => {return response.text()})
-	.then(data => {document.querySelector("body").innerHTML = data});
-	
-	fetch("VarunR/index.html").then(response => {return response.text()})
-	.then(data => {document.querySelector("body").insertAdjacentHTML('beforeend', data)});
-	
-	</script>
 </head>
 <html>
 	<body>
-		
+		<header class="header">
+	<nav class="navMenu">
+			<a class="navItem" href="#robot">
+				Home
+			</a>
+			<a class="navItem" href="#whatIs">
+				About
+			</li>
+			<a class="navItem" href="#howItWorksVR">
+				Features
+			</a>
+			<a class="navItem" href="https://slack.com" target="_blank">
+				Add to Slack
+			</a>
+	</nav>
+</header>
+   <main>
+<section id="robot">
+	<div class="doubleContainer">
+		<div class="tickyContainer">
+			<h1>TickyBot</h1>
+			<p class="tickyText">
+				Let your team manage their support tickets 100% inside Slack
+			</p>
+		<a>
+		  <div class="tickyButton">
+      <div class="slackImage">
+        <img src="../img/slack.svg"/>
+      </div>
+      <div class="slackText">
+        Add to <strong>Slack</strong>
+      </div>
+		    
+		  </div>
+		</a>
+		</div>
+		<div class="robotPic">
+			<img src = "../img/bot.svg" />
+		</div>
+	</div>
+</section>
+	<section id="whatIs">
+  <div class="tickyBotBox">
+	  <h2>What Is <span>Ticky</span>Bot</h2>
+	  <div class="textBox">
+	    <p><span id="bold">Ticky</span>Bot is a Slack Bot 🤖 that lets you use support tickets on Slack. This way, you don't need to leave
+            your beloved channel to assist your users, if you don't feel like it.</p>
+	    <p>
+	      With <span id="bold">Ticky</span>Bot you can easily check if you've received new tickets, change their status, or write a reply, and the ticket will instantly update itself on our site.
+	    </p>
+	    <p>
+	      Support requests shouldn't be handled through Slack's direct messages. 
+<span id="italic">Image about someone asking silly questions and the workplace admin asking him/her to open a support ticket so other admins could look into the issue.</span>
+	    </p>
+	  </div>
+   </div>
+</section>
+   
+   
+   
+   <section id="howItWorksVR">
+  <div class="worksContainerVR">
+    <div class="worksHeadingVR">
+      <h2>How It Works</h2>
+    </div>
+    <div class="cardsContainerVR">
+    <div class="cardVR" id="card1VR">
+      <div class="topThumbnailVR">
+        <img src="/img/first.svg"/>
+      </div>
+      <div class="cardFooterVR">
+        <p>You can add <span>Ticky</span>Bot to your Slack workplace by scrolling down or <a href="#">clicking here</a></p>
+      </div>
+    </div>
+    <div class="cardVR" id="card2VR">
+     <div class="topThumbnailVR">
+       <img src="/img/download.svg" />
+     </div>
+     <div class="cardFooterVR">
+       <p>Your users can open a ticket by typing <span>/ticket</span> and their message into the chat field</p>
+     </div>
+      
+    </div>
+    <div class="cardVR" id="card3VR">
+     <div class="topThumbnailVR">
+       <img src="/img/third.svg" />
+     </div>
+     <div class="cardFooterVR">
+       <p>Once you or another admin solved their problems you can type <span>/ticket close #id</span> to close the ticket</p>
+     </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="usingTickyBotVR">
+  <div class="usingContainerVR">
+   <div class="usingHeadingVR">
+     <h2>Start Using TickyBot Today</h2>
+   </div>
+   <div class="tickyParVR">
+     <p><span>Ticky</span>Bot allows Slack teams to manage their support tickets 100% inside Slack, without having to switch between different apps.</p>
+   </div>
+   <div class="slackButtonVR">
+     <div class="tickyButtonVR">
+      <div class="slackImageVR">
+        <img src="../img/slack.svg"/>
+      </div>
+      <div class="slackTextVR">
+        Add to <strong>Slack</strong>
+      </div>
+		    
+		  </div>
+   </div>
+   <div class="usingFooterVR">
+     <p>...so you don't need to got back and forth with another app.</p>
+   </div>
+    
+  </div>
+</section>
+  </main>
+<footer>
+ <p>Made with ❤️ by the ChinguBears 19 team</p>
+ <p>Source code is available on our <span>GitHub page</span></p>
+ <p>The app is not created by,affiliated with, or supported by Slack Technologies, Inc.</p>
+ <div class="topArrowVR">
+   
+ </div>
+</footer>
+ 
 	</body>
 </html>
