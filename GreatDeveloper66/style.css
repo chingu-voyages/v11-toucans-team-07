@@ -53,6 +53,8 @@ section#whatIs h2 {
   color: rgba(0, 0, 0, 0.75);
   font-size: 40px;
   padding-top: 20px;
+  transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
+  opacity: 1.0;
 }
 
 section#whatIs h2 span {
@@ -114,6 +116,8 @@ a.navItem:hover {
   grid-template: 1fr/1fr;
   justify-items: center;
   align-items: center;
+  opacity: 1.0;
+  transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
 }
 
 
@@ -122,6 +126,8 @@ a.navItem:hover {
   grid-template: 125px 1fr 1fr/1fr;
   justify-items: center;
   align-items: center;
+  transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
+  opacity: 1.0;
 }
 
 .tickyContainer h1 {
@@ -155,7 +161,7 @@ a.navItem:hover {
   justify-items: center;
   align-items: center;
   margin-bottom: 50px;
-  transition: transform 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
 }
 
 .tickyButton:hover {
@@ -186,6 +192,11 @@ a.navItem:hover {
   line-height: 1.8em;
   font-size: 30px;
   justify-self: start;
+}
+
+.tickyContainer:hover, .robotPic:hover,section#whatIs h2:hover {
+  opacity: 0.0;
+  transform: translateY(-20px);
 }
 
 @media screen and (min-width: 768px) {
