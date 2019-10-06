@@ -169,6 +169,17 @@ footer {
   margin: 10px;
   background-color: yellow;
 }
+
+#card1VR,#card2VR,#card3VR {
+  opacity: 0.0;
+}
+#card2VR {
+  transition: opacity 0.5s ease-in-out 0.5s;
+}
+
+#card3VR {
+  transition: opacity 0.5s ease-in-out 1s;
+}
 @media only screen and (min-width: 768px){
   section#howItWorksVR {
     height: 1300px;
