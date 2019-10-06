@@ -4,6 +4,11 @@
 import tickyButtonEffects from "../js/GreatDeveloper66/tickyButtonEffects.js";
 import fadeInOut from "../js/GreatDeveloper66/fadeInOutEffect.js";
 tickyButtonEffects();
+window.onscroll = () => {
+    if(window.scrollY > 600){
+      document.getElementById("card1VR").style.opacity = 1.0;
+    }
+  }
 /*
 fadeInOut();
 */

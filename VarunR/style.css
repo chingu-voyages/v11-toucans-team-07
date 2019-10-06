@@ -169,6 +169,10 @@ footer {
   margin: 10px;
   background-color: yellow;
 }
+
+#card1VR,#card2VR,#card3VR {
+  opacity: 0.0;
+}
 @media only screen and (min-width: 768px){
   section#howItWorksVR {
     height: 1300px;
