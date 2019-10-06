@@ -118,7 +118,15 @@ section#usingTickyBotVR h2 span {
   justify-items: center;
   align-items: center;
   margin-bottom: 50px;
+  transition: background-color 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
 }
+
+.tickyButtonVR:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+  background-color: rosybrown;
+}
+
 
 .slackImageVR {
   height: 50px;
@@ -128,6 +136,7 @@ section#usingTickyBotVR h2 span {
   grid-template: 1fr/1fr;
   justify-items: center;
   align-items: center;
+  transition: transform 1s ease-in-out;
 }
 
 .slackImageVR img {
