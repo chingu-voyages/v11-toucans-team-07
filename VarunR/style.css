@@ -118,7 +118,15 @@ section#usingTickyBotVR h2 span {
   justify-items: center;
   align-items: center;
   margin-bottom: 50px;
+  transition: background-color 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
 }
+
+.tickyButtonVR:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+  background-color: rosybrown;
+}
+
 
 .slackImageVR {
   height: 50px;
@@ -128,6 +136,7 @@ section#usingTickyBotVR h2 span {
   grid-template: 1fr/1fr;
   justify-items: center;
   align-items: center;
+  transition: transform 1s ease-in-out;
 }
 
 .slackImageVR img {
@@ -168,6 +177,19 @@ footer {
 	 right: 20px;
   margin: 10px;
   background-color: yellow;
+  opacity: 0.0;
+  transition: opacity 0.5s ease-in-out 0.5s;
+}
+
+#card1VR,#card2VR,#card3VR {
+  opacity: 0.0;
+}
+#card2VR {
+  transition: opacity 0.5s ease-in-out 0.5s;
+}
+
+#card3VR {
+  transition: opacity 0.5s ease-in-out 1s;
 }
 @media only screen and (min-width: 768px){
   section#howItWorksVR {

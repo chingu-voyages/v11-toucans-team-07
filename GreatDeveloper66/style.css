@@ -37,7 +37,7 @@ section#whatIs {
 }
 
 .tickyBotBox p {
-  color: rgba(0,0,0,0.75);
+  color: rgba(0, 0, 0, 0.75);
 }
 
 span#bold {
@@ -53,6 +53,8 @@ section#whatIs h2 {
   color: rgba(0, 0, 0, 0.75);
   font-size: 40px;
   padding-top: 20px;
+  transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
+  opacity: 1.0;
 }
 
 section#whatIs h2 span {
@@ -92,6 +94,12 @@ a.navItem {
   font-size: 18px;
   width: auto;
   margin-left: 15px;
+  transition: 0.5s all ease-in;
+}
+
+a.navItem:hover {
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 
@@ -108,6 +116,8 @@ a.navItem {
   grid-template: 1fr/1fr;
   justify-items: center;
   align-items: center;
+  opacity: 1.0;
+  transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
 }
 
 
@@ -116,6 +126,8 @@ a.navItem {
   grid-template: 125px 1fr 1fr/1fr;
   justify-items: center;
   align-items: center;
+  transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
+  opacity: 1.0;
 }
 
 .tickyContainer h1 {
@@ -149,6 +161,11 @@ a.navItem {
   justify-items: center;
   align-items: center;
   margin-bottom: 50px;
+  transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
+}
+
+.tickyButton:hover {
+  transform: scale(0.97);
 }
 
 .slackImage {
@@ -159,6 +176,7 @@ a.navItem {
   grid-template: 1fr/1fr;
   justify-items: center;
   align-items: center;
+  transition: transform 1s ease-in-out;
 }
 
 .slackImage img {
@@ -174,6 +192,66 @@ a.navItem {
   line-height: 1.8em;
   font-size: 30px;
   justify-self: start;
+}
+
+@keyframes headMove {
+  0% {
+    transform-origin: 50%;
+    transform: rotate(0deg);
+  }
+
+  15% {
+    transform: rotate(5deg);
+  }
+
+  30% {
+    transform: rotate(-5deg);
+  }
+
+  45% {
+    transform: rotate(-5deg);
+  }
+
+  60% {
+    transform: rotate(5deg);
+    transform: scale(1, 1);
+  }
+
+  80% {
+    transform-origin:40% 15%;
+    transform: scale(0.9, 0.9);
+  }
+
+  100% {
+    transform: scale(1.0, 1.0);
+  }
+}
+
+@keyframes fadeInOut {
+  from {
+    opacity: 1.0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0.0;
+    transform: translateY(-15px);
+  }
+}
+.head {
+  
+  animation-name: headMove;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+
+.tickyContainer,
+.robotPic,
+section#whatIs h2 {
+  animation-name: fadeInOut;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
 }
 
 @media screen and (min-width: 768px) {

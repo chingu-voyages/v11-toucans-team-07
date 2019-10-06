@@ -44,4 +44,9 @@ Before merging with deployment branch test the code to ensure all of the feature
 * No software bugs meaning the code works as intended.
 * No interference with other features. The new code does not degrade the effeciveness of other features in the app.
 * Review Code to ensure it is readable and organized according to current standards.
+####More specific requirments
+1. Test for responsiveness at all screen breakpoints
+2. test for HTML/CSS layout consistency.
+3. Test for functionality. Ensure that interactive elements still work
+4. Test in all available major browsers: IE, Chrome, Safari,...
 
