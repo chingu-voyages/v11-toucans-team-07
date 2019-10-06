@@ -177,6 +177,8 @@ footer {
 	 right: 20px;
   margin: 10px;
   background-color: yellow;
+  opacity: 0.0;
+  transition: opacity 0.5s ease-in-out 0.5s;
 }
 
 #card1VR,#card2VR,#card3VR {
