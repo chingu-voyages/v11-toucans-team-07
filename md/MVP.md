@@ -23,3 +23,7 @@
 1. This version should copy the effects and functionality of the site(i.e. hover effects, internal links, scrolling, moving pictures, etc...)
 2. The code base may expand into Vanilla JS to reproduce interactive functions.
 3. See developmentProcedures.md for testing procedures.
+
+###Version 3-Third iteration of app
+1. This version should be ready for deployment.
+2. The code base will be primarily HTML5, CSS and JavaScript
