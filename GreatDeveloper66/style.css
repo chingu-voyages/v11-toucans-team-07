@@ -167,6 +167,7 @@ a.navItem:hover {
 }
 .tickyButton:hover {
   transform: scale(0.97);
+  cursor: pointer;
 }
 .slackImage {
   height: 50px;
