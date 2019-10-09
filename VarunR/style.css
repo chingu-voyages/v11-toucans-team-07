@@ -184,11 +184,11 @@ footer {
   opacity: 0.0;
 }
 #card2VR {
-  transition: opacity 0.5s ease-in-out 0.5s;
+  transition: opacity 0.4s ease-in-out 0.3s;
 }
 
 #card3VR {
-  transition: opacity 0.5s ease-in-out 1s;
+  transition: opacity 0.4s ease-in-out 0.6s;
 }
 @media only screen and (min-width: 768px){
   section#howItWorksVR {
