@@ -7,7 +7,6 @@ header.header {
   width: 100%;
   margin: auto;
 }
-
 section#robot {
   display: grid;
   grid-template: 1fr/1fr;
@@ -17,7 +16,6 @@ section#robot {
   grid-auto-rows: auto;
   background-color: #55c0ec;
 }
-
 section#whatIs {
   background-color: #FFFFFF;
   display: grid;
@@ -25,7 +23,6 @@ section#whatIs {
   justify-items: center;
   align-items: center;
 }
-
 .tickyBotBox {
   display: grid;
   grid-template: 40px 1fr/1fr;
@@ -35,44 +32,41 @@ section#whatIs {
   width: 90%;
   max-width: 1200px;
 }
-
 .tickyBotBox p {
   color: rgba(0, 0, 0, 0.75);
 }
-
 span#bold {
   color: #000000;
   font-weight: 900;
 }
-
 span#italic {
   font-style: italic;
 }
-
 section#whatIs h2 {
   color: rgba(0, 0, 0, 0.75);
   font-size: 40px;
   padding-top: 20px;
-  transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
   opacity: 1.0;
+  animation-name: fadeInOut;
+  animation-duration: 1.5s;
+  animation-delay: 1.0s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  animation-delay: 1.2s;
 }
-
 section#whatIs h2 span {
   color: #000000;
   font-weight: bold;
 }
-
 section#whatIs .textBox {
   display: grid;
   grid-template: auto auto auto/1fr;
 }
-
 section#whatIs p {
   padding: 5px 20px 5px 20px;
   font-size: 20px;
   line-height: 1.5em;
 }
-
 nav.navMenu {
   display: grid;
   grid-template: 1fr/auto auto auto auto;
@@ -83,7 +77,6 @@ nav.navMenu {
   margin-bottom: 20px;
   width: auto;
 }
-
 a.navItem {
   display: grid;
   grid-template: 1fr/1fr;
@@ -96,13 +89,10 @@ a.navItem {
   margin-left: 15px;
   transition: 0.5s all ease-in;
 }
-
 a.navItem:hover {
   color: #FFFFFF;
   cursor: pointer;
 }
-
-
 .doubleContainer {
   display: grid;
   grid-template: 1fr 1fr/1fr;
@@ -110,26 +100,26 @@ a.navItem:hover {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-
 .robotPic {
   display: grid;
   grid-template: 1fr/1fr;
   justify-items: center;
   align-items: center;
   opacity: 1.0;
-  transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
+  animation-name: fadeInOut;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  animation-delay: 0.9s;
 }
-
-
 .tickyContainer {
   display: grid;
   grid-template: 125px 1fr 1fr/1fr;
   justify-items: center;
   align-items: center;
-  transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
   opacity: 1.0;
 }
-
 .tickyContainer h1 {
   font-family: Signika;
   font-size: 5rem;
@@ -137,8 +127,11 @@ a.navItem:hover {
   margin-bottom: 2rem;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.6);
+  animation-name: fadeInOut;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
 }
-
 .tickyText {
   color: #FFFFFF;
   font-size: 1.675rem;
@@ -148,9 +141,13 @@ a.navItem:hover {
   padding-right: 1.3rem;
   margin-bottom: 2rem;
   text-align: center;
+  animation-name: fadeInOut;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  animation-delay: 0.3s;
 
 }
-
 .tickyButton {
   background-color: #FFFFFF;
   width: 300px;
@@ -162,12 +159,15 @@ a.navItem:hover {
   align-items: center;
   margin-bottom: 50px;
   transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
+  animation-name: fadeInOut;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  animation-delay: 0.6s;
 }
-
 .tickyButton:hover {
   transform: scale(0.97);
 }
-
 .slackImage {
   height: 50px;
   width: 50px;
@@ -178,13 +178,11 @@ a.navItem:hover {
   align-items: center;
   transition: transform 1s ease-in-out;
 }
-
 .slackImage img {
   width: 40px;
   height: 40px;
   justify-self: end;
 }
-
 .slackText {
   height: 50px;
   width: 190px;
@@ -238,20 +236,9 @@ a.navItem:hover {
   }
 }
 .head {
-  
   animation-name: headMove;
   animation-duration: 8s;
   animation-iteration-count: infinite;
-}
-
-
-.tickyContainer,
-.robotPic,
-section#whatIs h2 {
-  animation-name: fadeInOut;
-  animation-duration: 2s;
-  animation-direction: alternate;
-  animation-iteration-count: 2;
 }
 
 @media screen and (min-width: 768px) {
