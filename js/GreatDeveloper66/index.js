@@ -5,6 +5,7 @@ export default function tickyButtonEffects() {
   
   document.querySelector(".tickyButton").addEventListener("mouseenter", function () {
     document.querySelector(".slackImage").style.transform = "rotate(18deg)";
+    document.querySelector(".slackImage").style.transform = "scale(1.2)";
   });
   
    document.querySelector(".tickyButton").addEventListener("mouseleave", function () {
