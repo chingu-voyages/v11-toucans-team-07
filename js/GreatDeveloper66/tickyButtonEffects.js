@@ -12,7 +12,7 @@ export default function tickyButtonEffects() {
   });
 
   document.querySelector(".tickyButtonVR").addEventListener("mouseenter", function () {
-    document.querySelector(".slackImageVR").style.transform = "rotate(18deg)";
+    document.querySelector(".slackImageVR").style.transform = "rotate(18deg) scale(1.4)";
   });
 
   document.querySelector(".tickyButtonVR").addEventListener("mouseleave", function () {

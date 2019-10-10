@@ -123,7 +123,7 @@ section#usingTickyBotVR h2 span {
 .tickyButtonVR:hover {
   transform: scale(0.95);
   cursor: pointer;
-  background-color: rosybrown;
+  background-color:  #2c3e50;
 }
 
 
