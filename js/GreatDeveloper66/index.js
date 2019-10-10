@@ -20,6 +20,7 @@ export default function tickyButtonEffects() {
    document.querySelector(".tickyButtonVR").addEventListener("mouseleave", function () {
      window.alert("mouseleave");
     document.querySelector(".slackImageVR").style.transform = "rotate(-18deg)";
+     document.querySelector(".slackImageVR").style.transform = "scale(1.2)";
     
   });
   
