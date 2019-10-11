@@ -248,6 +248,38 @@ a.navItem:hover {
   animation-duration: 14s;
   animation-iteration-count: infinite;
 }
+
+.underline {
+  position: absolute;
+  background-color: #55c0ec;
+  width: 175px;
+  height: 4px;
+  align-self: start;
+  margin-top: 50px;
+}
+
+.underlineB {
+  position: absolute;
+  background-color: #55c0ec;
+  width: 175px;
+  height: 4px;
+  justify-self: center;
+  margin-top: 83px;
+}
+
+.underlineC {
+  position: absolute;
+  background-color: #55c0ec;
+  width: 175px;
+  height: 4px;
+  margin-left: 75px;
+}
+
+@media screen and (min-width: 500px){
+   .underlineC {
+      margin-left: 150px;
+}   
+}
 @media screen and (min-width: 768px) {
   .doubleContainer {
     width: 85%;
@@ -284,6 +316,7 @@ a.navItem:hover {
   section#whatIs .textBox p:nth-child(3) {
     grid-area: section3;
   }
+ 
 }
 
 @media screen and (min-width: 1024px) {
