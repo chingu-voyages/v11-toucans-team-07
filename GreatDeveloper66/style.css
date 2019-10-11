@@ -254,8 +254,7 @@ a.navItem:hover {
   background-color: #55c0ec;
   width: 175px;
   height: 4px;
-  align-self: start;
-  margin-top: 50px;
+  margin-left: 50px;
 }
 
 .underlineB {
@@ -263,8 +262,7 @@ a.navItem:hover {
   background-color: #55c0ec;
   width: 175px;
   height: 4px;
-  justify-self: center;
-  margin-top: 83px;
+  margin-left: 35px;
 }
 
 .underlineC {
