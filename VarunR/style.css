@@ -55,6 +55,10 @@ section#howItWorksVR {
   background-color: #FFFFFF;
 }
 
+.cardFooterVR p span {
+  color: red;
+}
+
 section#howItWorksVR h2 {
   color: rgba(0, 0, 0, 0.75);
   font-size: 40px;
