@@ -2,7 +2,7 @@
 /*global document*/
 
 import tickyButtonEffects from "../js/GreatDeveloper66/tickyButtonEffects.js";
-import popups from "../js/GreatDeveloper66/scroll.js";
+import popups from "../js/GreatDeveloper66/popups.js";
 
 window.onload = () => {
   tickyButtonEffects();
