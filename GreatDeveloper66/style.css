@@ -7,7 +7,6 @@ header.header {
   width: 100%;
   margin: auto;
 }
-
 section#robot {
   display: grid;
   grid-template: 1fr/1fr;
@@ -17,7 +16,6 @@ section#robot {
   grid-auto-rows: auto;
   background-color: #55c0ec;
 }
-
 section#whatIs {
   background-color: #FFFFFF;
   display: grid;
@@ -25,7 +23,6 @@ section#whatIs {
   justify-items: center;
   align-items: center;
 }
-
 .tickyBotBox {
   display: grid;
   grid-template: 40px 1fr/1fr;
@@ -35,44 +32,41 @@ section#whatIs {
   width: 90%;
   max-width: 1200px;
 }
-
 .tickyBotBox p {
   color: rgba(0, 0, 0, 0.75);
 }
-
 span#bold {
   color: #000000;
   font-weight: 900;
 }
-
 span#italic {
   font-style: italic;
 }
-
 section#whatIs h2 {
   color: rgba(0, 0, 0, 0.75);
   font-size: 40px;
   padding-top: 20px;
-  transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
   opacity: 1.0;
+  animation-name: fadeInOut;
+  animation-duration: 1.5s;
+  animation-delay: 1.0s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  animation-delay: 1.2s;
 }
-
 section#whatIs h2 span {
   color: #000000;
   font-weight: bold;
 }
-
 section#whatIs .textBox {
   display: grid;
   grid-template: auto auto auto/1fr;
 }
-
 section#whatIs p {
   padding: 5px 20px 5px 20px;
   font-size: 20px;
   line-height: 1.5em;
 }
-
 nav.navMenu {
   display: grid;
   grid-template: 1fr/auto auto auto auto;
@@ -83,7 +77,6 @@ nav.navMenu {
   margin-bottom: 20px;
   width: auto;
 }
-
 a.navItem {
   display: grid;
   grid-template: 1fr/1fr;
@@ -96,40 +89,37 @@ a.navItem {
   margin-left: 15px;
   transition: 0.5s all ease-in;
 }
-
 a.navItem:hover {
   color: #FFFFFF;
   cursor: pointer;
 }
-
-
 .doubleContainer {
   display: grid;
-  grid-template: 1fr 1fr/1fr;
+  grid-template: auto auto/1fr;
   width: 350px;
   margin-top: 25px;
   margin-bottom: 25px;
 }
-
 .robotPic {
   display: grid;
-  grid-template: 1fr/1fr;
+  grid-template: auto/auto;
   justify-items: center;
   align-items: center;
   opacity: 1.0;
-  transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
+  animation-name: fadeInOut;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  animation-delay: 0.9s;
 }
-
-
 .tickyContainer {
   display: grid;
   grid-template: 125px 1fr 1fr/1fr;
   justify-items: center;
   align-items: center;
-  transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
   opacity: 1.0;
 }
-
 .tickyContainer h1 {
   font-family: Signika;
   font-size: 5rem;
@@ -137,8 +127,14 @@ a.navItem:hover {
   margin-bottom: 2rem;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.6);
+  animation-name: fadeInOut;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
 }
-
+.tickyContainer a {
+  text-decoration: none;
+}
 .tickyText {
   color: #FFFFFF;
   font-size: 1.675rem;
@@ -148,9 +144,13 @@ a.navItem:hover {
   padding-right: 1.3rem;
   margin-bottom: 2rem;
   text-align: center;
+  animation-name: fadeInOut;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  animation-delay: 0.3s;
 
 }
-
 .tickyButton {
   background-color: #FFFFFF;
   width: 300px;
@@ -162,12 +162,17 @@ a.navItem:hover {
   align-items: center;
   margin-bottom: 50px;
   transition: opacity 0.5s ease-in-out 0.5s, transform 0.5s ease-in-out 0.5s;
+  animation-name: fadeInOut;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  animation-delay: 0.6s;
+  margin-bottom: 0;
 }
-
 .tickyButton:hover {
   transform: scale(0.97);
+  cursor: pointer;
 }
-
 .slackImage {
   height: 50px;
   width: 50px;
@@ -178,13 +183,11 @@ a.navItem:hover {
   align-items: center;
   transition: transform 1s ease-in-out;
 }
-
 .slackImage img {
   width: 40px;
   height: 40px;
   justify-self: end;
 }
-
 .slackText {
   height: 50px;
   width: 190px;
@@ -192,41 +195,44 @@ a.navItem:hover {
   line-height: 1.8em;
   font-size: 30px;
   justify-self: start;
+  color: black;
 }
-
 @keyframes headMove {
   0% {
-    transform-origin: 50%;
-    transform: rotate(0deg);
+   
   }
-
-  15% {
-    transform: rotate(5deg);
+  11% {
+    transform-origin: center;
+    transform: scale(0.9);
   }
-
-  30% {
-    transform: rotate(-5deg);
+  22% {
+    transform-origin: center;
+    transform: scale(1);
   }
-
-  45% {
-    transform: rotate(-5deg);
+  33% {
+    transform: translateX(10px);
   }
-
-  60% {
-    transform: rotate(5deg);
-    transform: scale(1, 1);
+  44% {
+    transform: translateX(-10px);
   }
-
-  80% {
-    transform-origin:40% 15%;
-    transform: scale(0.9, 0.9);
+  55% {
+    transform-origin: center;
+    transform: translateX(0);
   }
-
+  66% {
+    transform: translateY(10px);
+  }
+  77% {
+    transform: translateY(0);
+  }
+  88% {
+    transform: translateY(-10px);
+  }
   100% {
-    transform: scale(1.0, 1.0);
+    transform: translateY(0);
   }
+  
 }
-
 @keyframes fadeInOut {
   from {
     opacity: 1.0;
@@ -238,32 +244,57 @@ a.navItem:hover {
   }
 }
 .head {
-  
   animation-name: headMove;
-  animation-duration: 8s;
+  animation-duration: 14s;
   animation-iteration-count: infinite;
 }
 
-
-.tickyContainer,
-.robotPic,
-section#whatIs h2 {
-  animation-name: fadeInOut;
-  animation-duration: 2s;
-  animation-direction: alternate;
-  animation-iteration-count: 2;
+.underline {
+  position: absolute;
+  background-color: #55c0ec;
+  width: 175px;
+  height: 4px;
+  margin-left: 50px;
 }
 
+.underlineB {
+  position: absolute;
+  background-color: #55c0ec;
+  width: 175px;
+  height: 4px;
+  margin-left: 35px;
+}
+
+.underlineC {
+  position: absolute;
+  background-color: #55c0ec;
+  width: 175px;
+  height: 4px;
+  margin-left: 75px;
+}
+
+@media screen and (min-width: 500px){
+   .underlineC {
+      margin-left: 150px;
+}   
+}
 @media screen and (min-width: 768px) {
   .doubleContainer {
     width: 85%;
     max-width: 1000px;
     grid-template: 1fr/1fr 1fr;
+    align-items: center;
   }
 
-  .robotPic img {
-    width: 95%;
+  .robotPic {
+    width: 85%;
+    height: 85%;
+    margin-left: 40px;
+  }
+  
+  .tickyContainer {
     height: 95%;
+    margin-right: 40px;
   }
 
   section#whatIs .textBox {
@@ -283,11 +314,16 @@ section#whatIs h2 {
   section#whatIs .textBox p:nth-child(3) {
     grid-area: section3;
   }
+ 
 }
 
 @media screen and (min-width: 1024px) {
-  .robotPic img {
-    width: initial;
-    height: initial;
+  .robotPic {
+    height: 400px;
+    width: 400px;
+  }
+  .tickyContainer {
+    height: 80%;
+    width: 80%;
   }
 }
