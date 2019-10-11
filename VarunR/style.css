@@ -27,7 +27,6 @@ section#howItWorksVR {
 }
 
 .cardVR {
-  border: 3px solid black;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   display: grid;
@@ -56,6 +55,10 @@ section#howItWorksVR {
   background-color: #FFFFFF;
 }
 
+.cardFooterVR p span {
+  color: red;
+}
+
 section#howItWorksVR h2 {
   color: rgba(0, 0, 0, 0.75);
   font-size: 40px;
@@ -68,7 +71,7 @@ section#howItWorksVR h2 span {
 }
 
 section#usingTickyBotVR {
-  height: 500px;
+  height: auto;
   background-color: #FFFFFF;
   display: grid;
   grid-template: 1fr/1fr;
@@ -82,7 +85,7 @@ section#usingTickyBotVR {
   max-width: 650px;
   background: transparent;
   display: grid;
-  grid-template: 100px 1fr 1fr 1fr/1fr;
+  grid-template: 100px auto 200px auto/1fr;
   align-items: center;
   justify-items: center;
   text-align: center;
@@ -97,6 +100,10 @@ section#usingTickyBotVR h2 {
 section#usingTickyBotVR h2 span {
   color: #000000;
   font-weight: bold;
+}
+
+section#usingTickyBotVR p {
+  font-size: 21px;
 }
 
 .usingHeadingVR, .tickParVR, .slackButtonVR, .usingFooterVR {
@@ -124,9 +131,13 @@ section#usingTickyBotVR h2 span {
 .tickyButtonVR:hover {
   transform: scale(0.95);
   cursor: pointer;
-  background-color: rosybrown;
+  background-color: #2c3e50;
 }
 
+
+.slackButtonVR a {
+  text-decoration: none;
+}
 
 .slackImageVR {
   height: 50px;
@@ -152,7 +163,10 @@ section#usingTickyBotVR h2 span {
   line-height: 1.8em;
   font-size: 30px;
   justify-self: start;
+  color: white;
 }
+
+
 
 footer {
   background-color:#40596B;
@@ -168,11 +182,11 @@ footer {
 
 .topArrowVR {
   position: fixed;
-  width: 50px;
-	 height: 50px;
+  width: 40px;
+	 height: 40px;
   border-radius: 4px;
 	 background: url("/img/topArrow.svg") no-repeat center;
-	 background-size: contain;
+	 background-size: 80%;
 	 bottom: 20px;
 	 right: 20px;
   margin: 10px;
@@ -185,11 +199,11 @@ footer {
   opacity: 0.0;
 }
 #card2VR {
-  transition: opacity 0.5s ease-in-out 0.5s;
+  transition: opacity 0.4s ease-in-out 0.3s;
 }
 
 #card3VR {
-  transition: opacity 0.5s ease-in-out 1s;
+  transition: opacity 0.4s ease-in-out 0.6s;
 }
 @media only screen and (min-width: 768px){
   section#howItWorksVR {
