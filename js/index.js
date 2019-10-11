@@ -2,7 +2,6 @@
 /*global document*/
 
 import tickyButtonEffects from "../js/GreatDeveloper66/tickyButtonEffects.js";
-import fadeInOut from "../js/GreatDeveloper66/fadeInOutEffect.js";
 tickyButtonEffects();
 window.onscroll = () => {
     if(window.scrollY > 800){
@@ -17,6 +16,4 @@ window.onscroll = () => {
     document.querySelector(".topArrowVR").style.opacity = 0.0;
   }
   }
-/*
-fadeInOut();
-*/
+
