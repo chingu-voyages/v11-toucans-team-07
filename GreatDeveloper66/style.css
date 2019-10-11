@@ -112,7 +112,6 @@ a.navItem:hover {
   animation-direction: alternate;
   animation-iteration-count: 2;
   animation-delay: 0.9s;
-  border: 3px solid red;
 }
 .tickyContainer {
   display: grid;
@@ -120,7 +119,6 @@ a.navItem:hover {
   justify-items: center;
   align-items: center;
   opacity: 1.0;
-  border: 3px solid blue;
 }
 .tickyContainer h1 {
   font-family: Signika;
@@ -259,12 +257,14 @@ a.navItem:hover {
   }
 
   .robotPic {
-    width: 80%;
-    height: 80%;
+    width: 85%;
+    height: 85%;
+    margin-left: 40px;
   }
   
   .tickyContainer {
-    height: 70%;
+    height: 95%;
+    margin-right: 40px;
   }
 
   section#whatIs .textBox {
@@ -290,5 +290,9 @@ a.navItem:hover {
   .robotPic {
     height: 400px;
     width: 400px;
+  }
+  .tickyContainer {
+    height: 80%;
+    width: 80%;
   }
 }
