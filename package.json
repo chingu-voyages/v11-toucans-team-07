@@ -4,7 +4,7 @@
   "description": "Sticky Bot Clone for v11-toucans-team-07 project",
   "main": "index.php",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx standard"
   },
   "repository": {
     "type": "git",
