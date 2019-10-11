@@ -1,5 +1,6 @@
 /*jshint esversion: 6*/
 /*global document*/
+/*global window*/
 export default function popups() {
   window.onscroll = () => {
     if (window.scrollY > 800) {
@@ -12,7 +13,7 @@ export default function popups() {
     } else {
       document.querySelector(".topArrowVR").style.opacity = 0.0;
     }
-  }
+  };
 
 
 }
