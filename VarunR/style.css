@@ -151,7 +151,10 @@ section#usingTickyBotVR h2 span {
   line-height: 1.8em;
   font-size: 30px;
   justify-self: start;
+  color: white;
 }
+
+
 
 footer {
   background-color:#40596B;
