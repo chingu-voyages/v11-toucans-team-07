@@ -95,14 +95,14 @@ a.navItem:hover {
 }
 .doubleContainer {
   display: grid;
-  grid-template: 1fr 1fr/1fr;
+  grid-template: auto auto/1fr;
   width: 350px;
   margin-top: 25px;
   margin-bottom: 25px;
 }
 .robotPic {
   display: grid;
-  grid-template: 1fr/1fr;
+  grid-template: auto/auto;
   justify-items: center;
   align-items: center;
   opacity: 1.0;
@@ -112,6 +112,7 @@ a.navItem:hover {
   animation-direction: alternate;
   animation-iteration-count: 2;
   animation-delay: 0.9s;
+  border: 3px solid red;
 }
 .tickyContainer {
   display: grid;
@@ -119,6 +120,7 @@ a.navItem:hover {
   justify-items: center;
   align-items: center;
   opacity: 1.0;
+  border: 3px solid blue;
 }
 .tickyContainer h1 {
   font-family: Signika;
@@ -167,6 +169,7 @@ a.navItem:hover {
   animation-direction: alternate;
   animation-iteration-count: 2;
   animation-delay: 0.6s;
+  margin-bottom: 0;
 }
 .tickyButton:hover {
   transform: scale(0.97);
@@ -252,11 +255,16 @@ a.navItem:hover {
     width: 85%;
     max-width: 1000px;
     grid-template: 1fr/1fr 1fr;
+    align-items: center;
   }
 
-  .robotPic img {
-    width: 95%;
-    height: 95%;
+  .robotPic {
+    width: 80%;
+    height: 80%;
+  }
+  
+  .tickyContainer {
+    height: 70%;
   }
 
   section#whatIs .textBox {
@@ -279,8 +287,8 @@ a.navItem:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  .robotPic img {
-    width: initial;
-    height: initial;
+  .robotPic {
+    height: 400px;
+    width: 400px;
   }
 }
