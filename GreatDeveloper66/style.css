@@ -132,6 +132,9 @@ a.navItem:hover {
   animation-direction: alternate;
   animation-iteration-count: 2;
 }
+.tickyContainer a {
+  text-decoration: none;
+}
 .tickyText {
   color: #FFFFFF;
   font-size: 1.675rem;
@@ -191,6 +194,7 @@ a.navItem:hover {
   line-height: 1.8em;
   font-size: 30px;
   justify-self: start;
+  color: black;
 }
 @keyframes headMove {
   0% {
